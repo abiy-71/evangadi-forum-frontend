@@ -1,0 +1,179 @@
+.header {
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.header_container {
+    max-width: 900px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo {
+    display: block;
+}
+
+.logo img {
+    width: 170px;
+    display: block;
+}
+
+
+/* Hamburger */
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: #333;
+    border-radius: 2px;
+
+    transition: 0.3s;
+}
+
+
+/* Hamburger animation */
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: none;
+}
+
+
+/* Mobile open menu */
+
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+    right: 0;
+
+    padding: 20px;
+
+    background-color: white;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Navigation links */
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 15px;
+
+    padding: 15px 0;
+}
+
+
+/* Sign in / Logout */
+
+.navigation button,
+.navigation .signin_button {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #536ce8;
+    color: white;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .header_container {
+        height: 85px;
+        padding: 0;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .navigation a {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .navigation button,
+    .navigation .signin_button {
+        width: 165px;
+        height: 35px;
+        margin-top: 0;
+    }
+}
