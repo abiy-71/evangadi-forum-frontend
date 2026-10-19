@@ -9,9 +9,10 @@ The frontend of the Evangadi Forum application, built with React and Vite. The a
 - Home page displaying questions fetched from the backend
 - Display of the logged-in user's name
 - Ask Question button on the Home page
+- Ask question page prompting the user to insert question title and description
 
 ### In Progress
-- Implementing the Ask Question feature
+- Implementing the API integration for the ask question page
 - Implementing question details and answers
 
 ## Technologies Used
@@ -73,6 +74,6 @@ The frontend's API configuration must point to the backend server. Check your Ax
 
 ## Project Status
 
-The project is actively being developed. The Home page and authentication functionality are implemented, while question creation and question details with answers are still in progress.
+The project is actively being developed. The Home page and authentication functionality are implemented and also the ask question page, while api integration for the ask question page and question details with answers are still in progress.
 
 
