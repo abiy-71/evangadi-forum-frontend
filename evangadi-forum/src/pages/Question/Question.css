@@ -104,6 +104,19 @@
   background-color: #4056d8;
 }
 
+.form_message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form_message.success {
+  color: #218838;
+}
+
+.form_message.error {
+  color: #dc3545;
+}
 
 @media (max-width: 600px) {
   .inner_wrapper {

@@ -2,7 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { FaUserCircle, FaChevronRight } from "react-icons/fa";
 import { AppState } from "../../App";
 import axios from '../../axiosConfig';
-import './Home.css'
+import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [questions, setQuestions] = useState([]);
@@ -32,7 +33,7 @@ const Home = () => {
     <section className="outer_wrapper">
       <div className="questions_wrapper">
         <div className="question_top">
-          <button className="ask_question_btn">Ask Question</button>
+          <Link to='/question' className="ask_question_btn">Ask Question</Link>
           <h2>
             Welcome: <span>{user?.username}</span>
           </h2>

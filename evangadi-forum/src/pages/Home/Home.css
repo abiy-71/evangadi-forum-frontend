@@ -25,7 +25,7 @@
 }
 
 .ask_question_btn {
-    border: none;
+    text-decoration: none;
     background-color: #536ce8;
     color: white;
     padding: 10px 35px;
