@@ -16,7 +16,7 @@ const Question = () => {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        "http://localhost:5500/api/questions",
+        "/questions",
         {
           title,
           description,
@@ -66,7 +66,6 @@ const Question = () => {
 
         <div className="question_form">
           <h2>Ask a public Question</h2>
-          <Link to="#">Go to question detail & answer page</Link>
 
           <form onSubmit={handleSubmit}>
             <input

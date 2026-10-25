@@ -8,6 +8,7 @@ import axios from "./axiosConfig";
 import PublicLayout from "./layouts/PublicLayout";
 import MainLayout from "./layouts/MainLayout";
 import Question from "./pages/Question/Question";
+import QuestionDetailAndAnswer from "./pages/QuestionDetailAndAnswer/QuestionDetailAndAnswer";
 
 export const AppState = createContext();
 
@@ -55,6 +56,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/question" element={<Question />} />
+          <Route path="/question/:question_id" element={<QuestionDetailAndAnswer />} />
         </Route>
       </Routes>
     </AppState.Provider>

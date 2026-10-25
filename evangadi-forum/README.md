@@ -1,27 +1,29 @@
 # Evangadi Forum Frontend
 
-The frontend of the Evangadi Forum application, built with React and Vite. The application allows users to authenticate and view questions retrieved from the backend API.
+The frontend of the Evangadi Forum application, built with React and Vite. Users can register, log in, browse questions, post questions, view question details, and share answers with the community.
 
 ## Features
 
-### Implemented
 - User registration and login
-- Home page displaying questions fetched from the backend
 - Display of the logged-in user's name
-- Ask Question button on the Home page
-- Ask question page prompting the user to insert question title and description
-- Posting a question
-
-### In Progress
-- Implementing question details and answers
+- Home page displaying questions fetched from the backend API
+- Navigation to the Ask Question page
+- Form to submit questions with a title and description
+- Question details page displaying the question and its answers
+- Form to post answers to questions
+- Automatic display of newly posted answers without refreshing the page
+- Loading indicator while answers are being fetched
+- Feedback messages for successful and failed submissions
+- Client-side navigation using React Router
 
 ## Technologies Used
 
-- **React** – Building the user interface
-- **Vite** – Development server and build tool
-- **React Router** – Client-side navigation
-- **Axios** – Making HTTP requests to the backend API
-- **React Icons** – Icons used in the interface
+- **React**: Building the user interface
+- **Vite**: Development server and build tool
+- **React Router**: Client-side routing and navigation
+- **Axios**: HTTP requests to the backend API
+- **React Icons**: Icons used throughout the interface
+- **CSS**: Styling and responsive layout
 
 ## Getting Started
 
@@ -62,18 +64,17 @@ Make sure you have the following installed:
 
 ## Backend Configuration
 
-The frontend communicates with the Evangadi Forum backend API to retrieve questions and authenticate users.
+The frontend communicates with the Evangadi Forum backend API for authentication, questions, and answers.
 
-Before running the application, make sure the backend is configured and running.
+The backend repository is available here:
 
-The backend repository is available at:
+[**Evangadi Forum Backend**](https://github.com/abiy-71/evangadi-forum-backend)
 
-[evangadi-forum-backend](https://github.com/abiy-71/evangadi-forum-backend)
+Before using the application, make sure the backend server is running and the Axios configuration points to the correct API base URL for your environment.
 
-The frontend's API configuration must point to the backend server. Check your Axios configuration file to confirm the correct base URL for your local setup.
+Follow the backend repository's instructions to configure its database, environment variables, and server.
 
 ## Project Status
 
-The project is actively being developed. The Home page and authentication functionality are implemented and also the ask question page, while the question details with answers page is still in progress.
-
+**Completed:** The frontend's core features for authentication, browsing and posting questions, viewing question details, and posting answers have been implemented.
 

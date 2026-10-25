@@ -43,6 +43,26 @@
   justify-content: space-between;
   border-bottom: 0.5px solid #D0CCE0;
   padding: 15px 0;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.question_item:hover {
+  background-color: #f2f2f2;
+}
+
+.question_avatar,
+.question_arrow {
+  transition: transform 0.3s ease;
+}
+
+.question_item:hover .question_avatar {
+  transform: translateX(4px);
+}
+
+.question_item:hover .question_arrow {
+  transform: translateX(6px);
 }
 
 .question_main {
